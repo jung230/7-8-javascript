@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script lang="java">
+        var a = "A";  //65 아스키코드값
+        var b = "B";  //66 아스키코드값
+        document.write("<h1>자바스크립트 관계연산자 2</h1>");
+
+            c = a<b  &&   a==b ;      /*  && 그리고 and  */
+            // 65 < 66 그리고 65 == 66
+                // t            f           f
+            document.write( c + "<br>"); // false
+
+
+            c = a<b || a==b ; // || 또는 or.
+            //  65<66 또는 65 == 66
+            //    t         f          t
+            document.write( c + "<br>");
+
+
+            c = a > b || a!=b ;
+            //  f 65>66   t 65 같지않다 66   t
+            document.write( c + "<br>");
+
+
+            c + !2 || 3 && !0 ;
+                // false    true    true
+                //          &&결과 true
+                // false || true
+                // true
+                //          ! : not의미 한다 부정 true는 false
+                //          false는 true로 변환
+
+                
+            //              0을 false 0이외 숫자(1)를 true
+            document.write( c + "<br>"); 
+            
+
+            c = a<b  ||   a==b ;      /*  || 또는 or  */
+            
+
+            // t   &&   t    t
+            // t   &&   f    f
+            // f   &&   t    f
+            // f   &&   f    f
+
+            // t   ||   t    t
+            // t   ||   f    t
+            // f   ||   t    t
+            // f   ||   f    f
+
+        
+
+    </script>
+</head>
+<body>
+
+    <!-- <a href="https://ko.wikipedia.org/wiki/ASCII">아스키코드값</a> -->
+    
+</body>
+</html>
